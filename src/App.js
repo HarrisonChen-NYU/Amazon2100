@@ -10,44 +10,24 @@ let shoppingCartItems = [
   },
 
   {
-    item: 'War and Peace',
-    image: 'https://images4.penguinrandomhouse.com/cover/9781400079988',
-    description: 'War and Peace broadly focuses on Napoleon’s invasion of Russia in 1812 and follows three of the most well-known characters in literature',
-    price: 100
+    item: 'Egg',
+    image: 'https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&ved=2ahUKEwivxub-58HlAhVhyIsBHSQ-AgsQjRx6BAgBEAQ&url=https%3A%2F%2Fwww.delish.com%2Fcooking%2Frecipe-ideas%2Frecipes%2Fa58284%2Fhow-to-make-perfect-hard-boiled-eggs%2F&psig=AOvVaw0S2S_PEtS5eVFEWbMDAQna&ust=1572450251261355',
+    description: 'This is from a distant land where chickens are twice the size and twice as powerful as traditional birds',
+    price: 5
   },
-  {
-    item: 'War and Peace',
-    image: 'https://images4.penguinrandomhouse.com/cover/9781400079988',
-    description: 'War and Peace broadly focuses on Napoleon’s invasion of Russia in 1812 and follows three of the most well-known characters in literature',
-    price: 100
-  },
-  {
-    item: 'War and Peace',
-    image: 'https://images4.penguinrandomhouse.com/cover/9781400079988',
-    description: 'War and Peace broadly focuses on Napoleon’s invasion of Russia in 1812 and follows three of the most well-known characters in literature',
-    price: 100
-  },
+
 ]
 
-function shoppingCartItems(thing) {
-  return thing;
-}
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App-header">
-        {shoppingCartItems.map(item)}
-      </div>
-    );
-  }
-}
-function App() {
+
+
+function App (){
   return (
     <div className="App">
       <h1>Your Shopping Cart</h1>
      <SearchForm />
      <ShoppingCart />
+     <Product />
     </div>
   );
 }
